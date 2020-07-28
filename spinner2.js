@@ -1,3 +1,12 @@
+let frames = ["|", "/", "-", "\\"];
+
+for (let i = 0; i < 9; i++) {
+  setTimeout(() => {
+    process.stdout.write(`\r ${frames[i % 4]}     ${i === 8 ? "\n" : ""}`);
+  }, 200 * i);
+}
+
+
 // let loop = 0;
 // let time = 100;
 // while (loop < 2) {
@@ -18,16 +27,6 @@
 // }
 
 
-let outterLoop = 100;
-let time = 100;
-let loop = 0;
-let frames = ["|", "/", "-", "\\"];
-
-for (let i = 0; i < 9; i++) {
-  setTimeout(() => {
-    process.stdout.write(`\r ${frames[i % 4]}     ${i === 8 ? "\n" : ""}`);
-  }, 200 * i);
-}
 
 
 
