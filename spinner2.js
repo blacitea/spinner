@@ -31,7 +31,6 @@ for (let i = 0; i < 9; i++) {
 
 
 // // Looping HELL
-let loop = 0;
 let time = 100;
 // let anime = setInterval(() => {
 for (let i = 0; i < 9; i++) {
