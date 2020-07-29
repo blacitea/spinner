@@ -31,19 +31,14 @@ for (let i = 0; i < 9; i++) {
 
 
 // // Looping HELL
+let loop = 0;
+let time = 100;
 // let anime = setInterval(() => {
-//   for (let each of frame) {
-//     setTimeout(() => {
-//       process.stdout.write(`\r ${each}     `);
-//       loop++;
-//       if (loop > 8) {
-//         process.stdout.write(`\r  |     `);
-//         console.log("Loop hits 8 here");
-//         clearInterval(anime);
-//       }
-//     }, time);
-//     time += 200;
-//   }
+for (let i = 0; i < 9; i++) {
+  setTimeout(() => {
+    process.stdout.write(`\r ${frames[i % 4]}     `);
+  }, time * i);
+}
 // }, time);
 
 // for (let j = 0; j <= 1; j++) {
